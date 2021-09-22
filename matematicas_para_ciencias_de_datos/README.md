@@ -107,3 +107,8 @@ se dice que dos variables estan relacionadas si una varia en la misma forma que 
 Correlacion no necesariamente significa "causasacion" 
 [libro estadistica](https://cims.nyu.edu/~cfgranda/pages/stuff/probability_stats_for_DS.pdf)
 ## Matrix de covarianza
+
+
+# Calculo
+Composicion de funciones
+Para revisarlo de una manera interactiva usa [**este**](.ipynb_checkpoints/composicion_de_funciones-checkpoint.ipynb) jupyter notebook, prueba modificando los parametros de entrada para funciones trigonometricas y polinomiales
