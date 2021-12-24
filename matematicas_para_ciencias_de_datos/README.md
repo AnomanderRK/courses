@@ -112,3 +112,37 @@ Correlacion no necesariamente significa "causasacion"
 # Calculo
 Composicion de funciones
 Para revisarlo de una manera interactiva usa [**este**](.ipynb_checkpoints/composicion_de_funciones-checkpoint.ipynb) jupyter notebook, prueba modificando los parametros de entrada para funciones trigonometricas y polinomiales
+
+# Neurona? Que es una?
+## Funcion de activacion para una neurona
+funcion escalon
+Funcion sigmoide
+tangente hiperbolica
+Relu
+# Mirar de manera grafica como funcionan las redes neuronales:
+[youtube](https://www.youtube.com/watch?v=FVozZVUNOOA&list=PL-Ogd76BhmcC_E2RjgIIJZd1DQdYHcVf0&index=8)
+
+[tensor flow playground](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.74026&showTestData=false&discretize=false&percTrainData=30&x=true&y=true&xTimesY=false&xSquared=true&ySquared=true&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false)
+
+Derivar con python...
+```
+from math import *
+import sympy as sp
+
+
+def derivada(expr, variables):
+    for der_respect in variables:
+        var = sp.Symbol(f'{der_respect}')
+        funcion = sp.Derivative(expr, var, evaluate=True)
+        print(f'La derivada parcial df/d{der_respect} =  {funcion}')
+
+
+if __name__ == '__main__':
+    variables = ['x', 'y', 'z']
+    expr = input("\nFuncion a evaluar:    f(x,y,z)=")
+    derivada(expr, variables)>
+```
+
+# La regla de la cadena en derivadas
+# El descenso del gradiente
+sirve para disminuir el error de nuestro modelo. Utiliza derivadas parciales o el *gradiente* de la funcion. [video](https://www.youtube.com/watch?v=A6FiCDoz8_4)
