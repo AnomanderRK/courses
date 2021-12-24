@@ -1,0 +1,44 @@
+--------------------------
+
+Ubuntu installation
+
+// para descargar la imagen
+$ docker pull ubuntu:20.04
+
+
+// para ver que contenedores están corriendo
+$docker ps
+
+// para correr el contenedor de ubuntu
+$ docker run -td --name ubuntu-platzi ubuntu:20.04
+
+// para detener el contenedor 
+$ docker stop ubuntu-platzi
+
+// para levantar nuevamente el servidor
+$ docker start ubuntu-platzi
+
+// para acceder al contenedor y correr comandos dentro de este
+$ docker exec -it ubuntu-platzi bash
+
+----------------------
+
+Centos installation
+
+// para descargar la imagen
+$ docker pull centos
+
+// para ver que contenedores están corriendo
+$docker ps
+
+// para correr el contenedor de ubuntu
+$ docker run -td --name centos-platzi centos
+
+// para detener el contenedor
+$ docker stop centos-platzi
+
+// para levantar nuevamente el servidor
+$ docker start centos-platzi
+
+// para acceder al contenedor y correr comandos dentro de este
+$ docker exec -it centos-platzi bash
