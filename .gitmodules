@@ -1,0 +1,3 @@
+[submodule "udemy/AI_Engineer_Core_Track_LLM_Engineering_RAG_QLoRA_Agents/llm_engineering"]
+	path = udemy/AI_Engineer_Core_Track_LLM_Engineering_RAG_QLoRA_Agents/llm_engineering
+	url = https://github.com/ed-donner/llm_engineering.git
