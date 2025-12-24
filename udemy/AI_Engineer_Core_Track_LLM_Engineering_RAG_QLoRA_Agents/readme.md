@@ -4,9 +4,13 @@
 
 · Setup
 1. Clone repo https://github.com/ed-donner/llm_engineering
-2. Install uv (Windows):
-   ```powershell
-   winget install --id=astral-sh.uv -e --accept-source-agreements --accept-package-agreements
+2. Install uv (Mac):
+   ```bash
+   brew install uv
+   ```
+   Or using the official installer:
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
    Restart terminal after installation, then verify with `uv --version`
 3. Create an OpenAI key at https://platform.openai.com/api-keys
@@ -15,27 +19,27 @@
 · uv Usage Examples
 
 **Install a specific Python version:**
-```powershell
+```bash
 uv python install 3.11        # Install Python 3.11
 uv python install 3.12        # Install Python 3.12
 uv python list                # List all available/installed Python versions
 ```
 
 **Create a virtual environment:**
-```powershell
+```bash
 uv venv                       # Creates .venv with default Python
 uv venv --python 3.11         # Creates .venv with Python 3.11
 uv venv myenv --python 3.12   # Creates 'myenv' folder with Python 3.12
 ```
 
-**Activate virtual environment (Windows):**
-```powershell
-.\.venv\Scripts\activate      # Activate the virtual environment
+**Activate virtual environment (Mac):**
+```bash
+source .venv/bin/activate     # Activate the virtual environment
 deactivate                    # Deactivate when done
 ```
 
 **Install packages:**
-```powershell
+```bash
 uv pip install requests                    # Install a single package
 uv pip install requests pandas numpy       # Install multiple packages
 uv pip install -r requirements.txt         # Install from requirements file
@@ -43,7 +47,7 @@ uv pip install -e .                        # Install current project in editable
 ```
 
 **Project management (with pyproject.toml):**
-```powershell
+```bash
 uv init                       # Initialize a new project
 uv add requests               # Add a dependency
 uv add --dev pytest           # Add a dev dependency
